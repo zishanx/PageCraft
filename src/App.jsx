@@ -2,6 +2,7 @@ import {useState} from "react"
 import defaultContent from "./data/defaultContent"
 import TemplateGallery from "./components/TemplateGallery";
 import SaaSTemplate from "./components/template/SaaSTemplate";
+import Portfolio from "./components/template/PortfolioTemplate";
 
 function App() {
   const [selectedTemplate, setSelectedTemplate] = useState(null)
@@ -28,7 +29,7 @@ function App() {
         <TemplateGallery onSelectTemplate={handleSelectTemplate} />
       ):(
         // <p className="p-8 text-center">Editor goes here - template: {selectedTemplate}</p>
-        <SaaSTemplate content={content}></SaaSTemplate>
+        <Portfolio content={content}></Portfolio>
       )}
     </div>
   )

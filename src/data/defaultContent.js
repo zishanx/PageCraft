@@ -43,7 +43,7 @@ const defaultContent = {
         project2Title: "ShopEase",
         project2Desc: "An e-commerce platform with real time inventory management.",
         testimonialQuote: "Alex delivered beyond expectations. Clean code, great communication.",
-        testimonialName: "Mike T.",
+        testimonialName: "Mike T",
         testimonialRole: "Founder at Launchpad",
         ctaBannerHeading: "Let's work together",
         ctaBannerSub: "Available for freelance projects worldwide.",
