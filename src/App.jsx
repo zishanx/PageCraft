@@ -1,8 +1,7 @@
 import {useState} from "react"
 import defaultContent from "./data/defaultContent"
 import TemplateGallery from "./components/TemplateGallery";
-import SaaSTemplate from "./components/template/SaaSTemplate";
-import Portfolio from "./components/template/PortfolioTemplate";
+import Editor from "./components/Editor";
 
 function App() {
   const [selectedTemplate, setSelectedTemplate] = useState(null)
@@ -28,8 +27,7 @@ function App() {
       {selectedTemplate === null ? (
         <TemplateGallery onSelectTemplate={handleSelectTemplate} />
       ):(
-        // <p className="p-8 text-center">Editor goes here - template: {selectedTemplate}</p>
-        <Portfolio content={content}></Portfolio>
+        <Editor selectedTemplate={selectedTemplate} content={content} onContentChange={handleContentChange} onBack={handleBack} ></Editor>
       )}
     </div>
   )

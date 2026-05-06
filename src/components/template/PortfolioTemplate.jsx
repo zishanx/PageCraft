@@ -24,7 +24,7 @@ export default function Portfolio({ content }) {
 
             <section className="py-10 px-10 md:px-30 bg-stone-50 w-full">
                 <h1 className="text-stone-700 text-3xl font-bold mb-10">Services</h1>
-                <div id="cards" className="flex flex-col md:flex-row g-5 text-stone-700 items-center justify-center text-center gap-10">
+                <div id="cards" className="flex flex-col md:flex-row g-5 text-stone-700 items-stretch justify-center text-center gap-10">
                     <div id="card" className="bg-stone-200 p-5 rounded flex flex-col gap-4 w-full">
                         <span className="text-4xl">💻</span>
                         <h2 className="text-2xl font-bold">{content.service1Title}</h2>
@@ -63,12 +63,12 @@ export default function Portfolio({ content }) {
                     <p className=""><span className="font-bold">-{content.testimonialName}, </span><span className="text-gray-400">{content.testimonialRole}</span></p>
                 </div>
             </section>
-           <section id="CTA" className="bg-stone-700 px-6 md:px-30 py-20">
+            <section id="CTA" className="bg-stone-700 px-6 md:px-30 py-20">
 
                 <div className=" text-center flex flex-col gap-6  items-center">
-                        <h2 className="text-2xl  md:text-4xl font-bold">{content.ctaBannerHeading}</h2>
-                        <p>{content.ctaBannerSub}</p>
-                        <button className="bg-white text-black px-6 py-3 rounded w-fit mx-auto">{content.ctaBannerBtn}</button>
+                    <h2 className="text-2xl  md:text-4xl font-bold">{content.ctaBannerHeading}</h2>
+                    <p>{content.ctaBannerSub}</p>
+                    <button className="bg-white text-black px-6 py-3 rounded w-fit mx-auto">{content.ctaBannerBtn}</button>
                 </div>
 
             </section>

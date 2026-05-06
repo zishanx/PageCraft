@@ -15,7 +15,7 @@ export default function SaaSTemplate({ content }) {
             </nav>
             <div
                 id="hero"
-                className=" relative py-16 md:py-32 items-center text-center flex flex-col justify-start  gap-6"
+                className=" relative overflow-hidden py-16 md:py-32 items-center text-center flex flex-col justify-start  gap-6"
                 style={content.heroImage ? { backgroundImage: `url(${content.heroImage})` } : {}}
             >
                 <div className="bg-black/60 absolute inset-0"></div>
@@ -27,7 +27,7 @@ export default function SaaSTemplate({ content }) {
                 </div>
             </div>
 
-            <div id="features" className=" px-6 md:px-30 py-10">
+            <div id="features" className="bg-gray-950 px-6 md:px-30 py-10">
                 <h2 className="font-bold text-3xl text-center">Features</h2>
                 <div id="cards " className="py-10 flex flex-col md:flex-row gap-6">
                         <div id="card" className="p-4 flex flex-col text-center items-center justify-between bg-black/50 p-10 gap-4 rounded">
@@ -52,7 +52,7 @@ export default function SaaSTemplate({ content }) {
             </div>
 
 
-            <section id="stats" className="bg-black/30  px-6 md:px-30 py-10  shadow">
+            <section id="stats" className="bg-gray-950   px-6 md:px-30 py-10  shadow">
                     <div className="flex flex-col md:flex-row  justify-center gap-10 w-full">
                         <div className="flex-1 text-center flex
                         flex-col gap-3">
@@ -74,7 +74,7 @@ export default function SaaSTemplate({ content }) {
                     </div>
             </section>
 
-            <section id="testimonials" className=" px-6 md:px-30 py-20">
+            <section id="testimonials" className=" bg-gray-950 px-6 md:px-30 py-20">
                 <div className="max-w-2xl mx-auto bg-black/40 border-l-4 border-purple-500 p-8 rounded">
                 <p className="text-center my-2 font-bold italic">{`"${content.testimonialQuote}"`}</p>
                 <p className="text-center">- {content.testimonialName}, <span className="text-gray-400">{content.testimonialRole}</span></p>
