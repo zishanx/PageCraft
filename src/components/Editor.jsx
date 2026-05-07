@@ -2,11 +2,12 @@ import SaaSTemplate from "./template/SaaSTemplate";
 import Portfolio from "./template/PortfolioTemplate";
 import Agency from "./template/AgencyTemplate"
 import Startup from "./template/StartupTemplate"
+import { Link } from "react-router-dom";
 
 
 
 
-export default function Editor({ selectedTemplate, content, onContentChange, onBack }) {
+export default function Editor({ selectedTemplate, content, onContentChange, onBack, onSave, projectId }) {
 
 
     return (
@@ -14,9 +15,13 @@ export default function Editor({ selectedTemplate, content, onContentChange, onB
             <div className="flex flex-row">
 
                 <div id="sidebar" className="flex flex-col h-full shrink-0 overflow-y-auto sticky top-0 w-[280px] h-screen p-4 border-r-2">
-                    <button onClick={onBack} className="w-fit h-fit p-2 bg-white rounded text-gray-900 py-1">Back</button>
+                    <div className="flex gap-5">
+                        <button onClick={onBack} className="w-fit h-fit p-2 bg-white rounded text-gray-900 py-1">Back</button>
+                        <button onClick={onSave} className="w-fit h-fit p-2 bg-white rounded text-gray-900 py-1">Save draft</button>
+                        <Link to={`/site/${projectId}`}>Preview</Link>
+                    </div>
                     <p className="mt-5 font-bold">Editor</p>
-
+                    {projectId && <> <p className="text-green-400 text-sm"> ✔️ Project Saved!</p></>}
                     <div>
                         <label className="text-sx text-gray-400">Brand name</label>
                         <input
@@ -344,7 +349,7 @@ export default function Editor({ selectedTemplate, content, onContentChange, onB
                         </>
                     )}
 
-                    {selectedTemplate ==="startup" && (
+                    {selectedTemplate === "startup" && (
                         <>
                             <div>
                                 <label className="text-sx text-gray-400">Feature-1</label><br />
