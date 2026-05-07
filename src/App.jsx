@@ -11,7 +11,7 @@ function App() {
   const [projectId, setProjectId] = useState(null)
 
   const saveProject = async () => {
-    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects`, {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}api/projects`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ templateId: selectedTemplate, content })
