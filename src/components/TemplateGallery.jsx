@@ -2,20 +2,24 @@ import Agencyimg from '../assets/Agency.png'
 import Portfolioimg from '../assets/Portfolio.png'
 import Saasimg from '../assets/Saas.png'
 import Startupimg from '../assets/Startup.png'
+import PageCraft from '../assets/PageCraft.png'
 
 export default function TemplateGallery({ onSelectTemplate }) {
     return (
 
         <div className="">
 
-            <nav className="bg-white border-b-2 border-gray-200 px-5 py-2 flex text-2xl items-center justify-between">
-                <h2 className="font-bold text-gray-900">PageCraft</h2>
+            <nav className="bg-white border-b-2 border-gray-200 px-5 py-2 flex text-2xl items-center justify-between ">
+                <div className='flex justify-center  items-center'>
+                    <img src={PageCraft} className="w-[60px] " alt="" />
+                    <h2 className="font-bold text-gray-900">PageCraft</h2>
+                </div>
                 <a href="https://github.com/zishanx"><button className="bg-gray-900 font-bold text-sm text-white rounded px-4 py-2 cursor-pointer">GitHub ↗</button></a>
             </nav>
 
-            <section className="p-20 flex flex-col text-center gap-5">
+            <section className="p-20 flex flex-col text-center gap-5 realtive">
                 <p className="text-gray-400 ">4 Beautiful templates</p>
-                <h1 className="text-5xl font-bold">Build your landing page in minutes</h1>
+                <h1 className="text-6xl font-bold">Build your landing page in minutes</h1>
                 <p className="text-gray-800">Pick a template, customize it , publish it.</p>
             </section>
 
@@ -26,7 +30,7 @@ export default function TemplateGallery({ onSelectTemplate }) {
                     role="button"
                     onKeyDown={(e) => e.key === "Enter" && onSelectTemplate("saas")}
                     className="p-4 rounded shadow  text-center hover:-translate-y-1 hover:shadow-lg tansition-all curson-pointer bg-white rounded-lg overflow-hidden">
-                    <img className="w-full object-cover"  src={Saasimg} alt="" />
+                    <img className="w-full object-cover" src={Saasimg} alt="" />
                     <h2 className="text-gray-800 font-bold text-2xl">Saas/Product</h2>
                     <p className='text-gray-400'>Dark Tech</p>
                 </div>
