@@ -4,7 +4,7 @@ export default function SaaSTemplate({ content }) {
             <nav className=" grid grid-cols-2 md:grid-cols-3 items-center p-4 bg-gray-950">
                 <h2 className="text-purple-400 font-bold text-xl">{content.brand}</h2>
                 <ul className="hidden md:flex  justify-center gap-6">
-                    <li className="text-gray-400 font-bold text-center"><a href="#About">About</a></li>
+                    <li className="text-gray-400 font-bold text-center"><a href="#about">About</a></li>
                     <li className="text-gray-400 font-bold text-center"><a href="#features">Feature</a></li>
                     <li className="text-gray-400 font-bold text-center"><a href="#contact">Contact</a></li>
                 </ul>
