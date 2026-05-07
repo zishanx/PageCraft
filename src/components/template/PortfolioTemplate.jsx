@@ -4,9 +4,9 @@ export default function Portfolio({ content }) {
             <nav className="bg-stone-50 text-stone-700 py-5 px-3 flex items-center justify-between relative ">
                 <h2 className="font-bold text-2xl">{content.brand}</h2>
                 <ul className=" hidden absolute left-1/2 transform -translate-x-1/2 md:flex gap-4 text-gray-700 text-center">
-                    <li><a href="">Work</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div>
                     <button className="border-2 border-stone-700 rounded-md px-5 py-2">{content.cta}</button>
@@ -22,7 +22,7 @@ export default function Portfolio({ content }) {
                 </div>
             </section>
 
-            <section className="py-10 px-10 md:px-30 bg-stone-50 w-full">
+            <section id="about" className="py-10 px-10 md:px-30 bg-stone-50 w-full">
                 <h1 className="text-stone-700 text-3xl font-bold mb-10">Services</h1>
                 <div id="cards" className="flex flex-col md:flex-row g-5 text-stone-700 items-stretch justify-center text-center gap-10">
                     <div id="card" className="bg-stone-200 p-5 rounded flex flex-col gap-4 w-full">
@@ -43,7 +43,7 @@ export default function Portfolio({ content }) {
                 </div>
             </section>
 
-            <section className="py-10 px-10 md:px-30 bg-stone-50 w-full">
+            <section id="work" className="py-10 px-10 md:px-30 bg-stone-50 w-full">
                 <h1 className="text-stone-700 text-3xl font-bold mb-10">Projects</h1>
                 <div id="projects" className="flex flex-col md:flex-row gap-5 items-center  justify-between w-full">
                     <div className="p-10 bg-stone-900 rounded-md w-full">
@@ -63,7 +63,7 @@ export default function Portfolio({ content }) {
                     <p className=""><span className="font-bold">-{content.testimonialName}, </span><span className="text-gray-400">{content.testimonialRole}</span></p>
                 </div>
             </section>
-            <section id="CTA" className="bg-stone-700 px-6 md:px-30 py-20">
+            <section id="contact" className="bg-stone-700 px-6 md:px-30 py-20">
 
                 <div className=" text-center flex flex-col gap-6  items-center">
                     <h2 className="text-2xl  md:text-4xl font-bold">{content.ctaBannerHeading}</h2>

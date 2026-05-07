@@ -11,7 +11,7 @@ export default function PublishedSite() {
     const { id } = useParams()
 
     async function getData() {
-        const response = await fetch(`http://localhost:4000/api/projects/${id}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/projects/${id}`);
         const result = await response.json()
         setData(result)
         

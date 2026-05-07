@@ -5,8 +5,8 @@ export default function SaaSTemplate({ content }) {
                 <h2 className="text-purple-400 font-bold text-xl">{content.brand}</h2>
                 <ul className="hidden md:flex  justify-center gap-6">
                     <li className="text-gray-400 font-bold text-center"><a href="#About">About</a></li>
-                    <li className="text-gray-400 font-bold text-center"><a href="#feature">Feature</a></li>
-                    <li className="text-gray-400 font-bold text-center"><a href="#Pricing">Pricing</a></li>
+                    <li className="text-gray-400 font-bold text-center"><a href="#features">Feature</a></li>
+                    <li className="text-gray-400 font-bold text-center"><a href="#contact">Contact</a></li>
                 </ul>
                 <div className="flex justify-end">
 
@@ -52,7 +52,7 @@ export default function SaaSTemplate({ content }) {
             </div>
 
 
-            <section id="stats" className="bg-gray-950   px-6 md:px-30 py-10  shadow">
+            <section id="about" className="bg-gray-950   px-6 md:px-30 py-10  shadow">
                     <div className="flex flex-col md:flex-row  justify-center gap-10 w-full">
                         <div className="flex-1 text-center flex
                         flex-col gap-3">
@@ -81,7 +81,7 @@ export default function SaaSTemplate({ content }) {
                 </div>
             </section>
 
-            <section id="CTA" className="bg-purple-700 px-6 md:px-30 py-20">
+            <section id="contact" className="bg-purple-700 px-6 md:px-30 py-20">
 
                 <div className=" text-center flex flex-col gap-6  items-center">
                         <h2 className="text-2xl  md:text-4xl font-bold">{content.ctaBannerHeading}</h2>

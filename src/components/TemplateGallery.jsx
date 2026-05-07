@@ -10,7 +10,7 @@ export default function TemplateGallery({ onSelectTemplate }) {
 
             <nav className="bg-white border-b-2 border-gray-200 px-5 py-2 flex text-2xl items-center justify-between">
                 <h2 className="font-bold text-gray-900">PageCraft</h2>
-                <a href=""><button className="bg-gray-900 font-bold text-sm text-white rounded px-4 py-2 cursor-pointer">GitHub ↗</button></a>
+                <a href="https://github.com/zishanx"><button className="bg-gray-900 font-bold text-sm text-white rounded px-4 py-2 cursor-pointer">GitHub ↗</button></a>
             </nav>
 
             <section className="p-20 flex flex-col text-center gap-5">
@@ -19,7 +19,7 @@ export default function TemplateGallery({ onSelectTemplate }) {
                 <p className="text-gray-800">Pick a template, customize it , publish it.</p>
             </section>
 
-            <div id="gallery" className=" grid grid-cols-2 gap-6 items-stretch justify-center px-10 pb-20">
+            <div id="gallery" className="flex flex-col md:grid grid-cols-2 gap-6 items-stretch justify-center px-10 pb-20">
                 <div
                     onClick={() => { onSelectTemplate("saas") }}
                     tabIndex={0}

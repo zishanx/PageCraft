@@ -4,9 +4,9 @@ export default function Startup({ content }) {
             <nav className="bg-orange-50 py-5 px-6 md:px-30 grid md:grid-cols-3 grid-cols-2 items-center ">
                 <h2 className="text-orange-500 font-bold text-xl">{content.brand}</h2>
                 <ul className="hidden md:flex gap-4 justify-center text-gray-500">
-                    <li><a href="#">Story</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#Feature">Feature</a></li>
+                    <li><a href="#steps">Steps</a></li>
+                    <li><a href="#CTA">Contact</a></li>
                 </ul>
                 <div className="flex justify-end ">
                     <button className="bg-orange-500 text-white px-5 py-2 rounded-md font-bold">{content.cta}</button>
@@ -20,7 +20,7 @@ export default function Startup({ content }) {
                 <button className="bg-orange-500 text-white px-8 py-3 rounded-md font-bold w-fit">{content.cta}</button>
             </section>
 
-            <section className=" bg-orange-50  pt-5 pb-10 px-20 flex flex-col  gap-10">
+            <section id="Feature" className=" bg-orange-50  pt-5 pb-10 px-20 flex flex-col  gap-10">
                 <h2 className="text-2xl md:text-3xl font-bold text-orange-500 pb-10 ">Features</h2>
                 <div className="flex flex-row gap-4 justify-center">
                     <span className="bg-orange-100 text-orange-500 px-6 py-3 rounded-full font-bold">{content.feature1}</span>
@@ -29,7 +29,7 @@ export default function Startup({ content }) {
                 </div>
             </section>
 
-            <section className="bg-orange-50 py-20 px-20 flex flex-col  gap-6">
+            <section id="steps" className="bg-orange-50 py-20 px-20 flex flex-col  gap-6">
 
                 <h2 className="text-2xl md:text-3xl font-bold text-orange-500">How it works</h2>
                 <div id="steps" className="flex md:flex-rows flex-col gap-7 ">
