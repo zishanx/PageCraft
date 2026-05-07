@@ -14,11 +14,11 @@ export default function Editor({ selectedTemplate, content, onContentChange, onB
         <>
             <div className="flex flex-row">
 
-                <div id="sidebar" className="flex flex-col h-full shrink-0 overflow-y-auto sticky top-0 w-[280px] h-screen p-4 border-r-2">
+                <div id="sidebar" className="flex flex-col h-full shrink-0 overflow-y-auto sticky top-0 w-[280px] p-4 border-r-2">
                     <div className="flex gap-5">
-                        <button onClick={onBack} className="w-fit h-fit p-2 bg-white rounded text-gray-900 py-1">Back</button>
+                        <button onClick={onBack} className="w-fit h-fit p-2 bg-red-300 rounded text-gray-900 py-1">Back</button>
                         <button onClick={onSave} className="w-fit h-fit p-2 bg-white rounded text-gray-900 py-1">Save draft</button>
-                        <Link to={`/site/${projectId}`}>Preview</Link>
+                        <Link to={`/site/${projectId}`} className="bg-green-300 text-gray-900 py-1 px-2 rounded-md">Preview</Link>
                     </div>
                     <p className="mt-5 font-bold">Editor</p>
                     {projectId && <> <p className="text-green-400 text-sm"> ✔️ Project Saved!</p></>}
